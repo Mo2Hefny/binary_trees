@@ -1,7 +1,8 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_root - checks if a given node is a root.
+ * binary_tree_preorder - goes through a binary tree
+ * using pre-order traversal.
  *
  * @tree: pointer to the node to check.
  * @func: a pointer to a function to call for each node.
