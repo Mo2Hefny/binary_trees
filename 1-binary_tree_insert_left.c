@@ -18,10 +18,15 @@ if (!New)
 return (NULL);
 New->n = value;
 New->parent = parent;
-New->left = temp;
-if (temp)
-temp->parent = New;
+New->left = NULL;
 New->right = NULL;
+
 parent->left = New;
+
+if (temp)
+{
+temp->parent = New;
+New->left = temp;
+}
 return (New);
 }
