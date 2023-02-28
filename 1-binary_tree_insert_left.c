@@ -21,12 +21,12 @@ New->parent = parent;
 New->left = NULL;
 New->right = NULL;
 
-parent->left = New;
 
 if (parent->left != NULL)
 {
 New->left = parent->left;
 parent->left->parent = New;
 }
+parent->left = New;
 return (New);
 }
