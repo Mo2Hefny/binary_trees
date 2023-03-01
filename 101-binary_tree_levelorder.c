@@ -7,8 +7,8 @@
  * @tree: pointer to the node to check.
  * @func: a pointer to a function to call for each node.
 */
-void binary_tree_levelorder_next
-(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_levelorder_next(const binary_tree_t
+*tree, void (*func)(int))
 {
 binary_tree_t *l_node, *r_node;
 if (!tree || !func)
@@ -31,8 +31,8 @@ binary_tree_levelorder_next(r_node, func);
  * @tree: pointer to the node to check.
  * @func: a pointer to a function to call for each node.
 */
-void binary_tree_levelorder
-(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_levelorder(const binary_tree_t
+*tree, void (*func)(int))
 {
 if (!tree || !func)
 return;
