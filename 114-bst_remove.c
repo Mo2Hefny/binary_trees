@@ -9,7 +9,7 @@
  *
  * Return:  pointer to the succesor.
 */
-bst_t *bst_min_diff(const bst_t *tree,int value)
+bst_t *bst_min_diff(const bst_t *tree, int value)
 {
 int l, r;
 if (!tree)
