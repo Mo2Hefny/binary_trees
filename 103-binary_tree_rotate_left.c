@@ -14,7 +14,7 @@ binary_tree_t *temp;
 if (!tree || !tree->right)
 return NULL;
 temp = tree->right;
-tree->right = temp->left ;
+tree->right = temp->left;
 tree->parent = temp;
 temp->parent = NULL;
 temp->left = tree;
