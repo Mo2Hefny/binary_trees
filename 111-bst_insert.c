@@ -1,12 +1,13 @@
 #include "binary_trees.h"
 #include <stdio.h>
 /**
- * binary_tree_is_bst - checks if a binary tree
- * is a valid Binary Search Tree.
+ * bst_insert - inserts a value in a
+ * Binary Search Tree.
  *
- * @tree: pointer to the root node of the tree.
+ * @tree: double pointer to the root node.
+ * @value: value to store in the node to be inserted.
  *
- * Return: 1 if the tree is a valid BST, 0 otherwise.
+ * Return: pointer to created node.
 */
 bst_t *bst_insert(bst_t **tree, int value)
 {
