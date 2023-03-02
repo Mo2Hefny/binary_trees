@@ -15,11 +15,11 @@ int is_bst(const binary_tree_t *node, int min, int max)
 {
 if (!node)
 return (1);
-if (node->n <= min || node->n >= max)
+if (node->n < min || node->n > max)
 return (0);
 return (
-is_bst(node->left, min, node->n) &&
-is_bst(node->right, node->n, max)
+is_bst(node->left, min, node->n - 1) &&
+is_bst(node->right, node->n + 1, max)
 );
 }
 
